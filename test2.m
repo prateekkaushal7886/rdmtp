@@ -11,16 +11,16 @@ flagAirfoil.XFoilLoad   = 0;
 
 Vinf = 1;                                                                   
 AoA  = 0;                                                                   
-NACA = '8418';                                                              
+NACA = '2418';                                                              
 alpha = AoA*(pi/180);                                                       
 
 % Plotting flags
-flagPlot = [0;          % Airfoil with panel normal vectors
-            0;          % Geometry boundary pts, control pts, first panel, second panel
-            0;          % Cp vectors at airfoil surface panels
+flagPlot = [1;          % Airfoil with panel normal vectors
+            1;          % Geometry boundary pts, control pts, first panel, second panel
+            1;          % Cp vectors at airfoil surface panels
             1;          % Pressure coefficient comparison (XFOIL vs. VPM)
-            0;          % Airfoil streamlines
-            0];         % Pressure coefficient contour
+            1;          % Airfoil streamlines
+            1];         % Pressure coefficient contour
 
 %% XFOIL - CREATE/LOAD AIRFOIL
 
