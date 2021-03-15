@@ -1,6 +1,6 @@
 
 %Input Parameters
-naca=0015;
+naca=2480;
 TE=1;                       % 1 for open trailing edge and 2 for closed trailing edge
 gridPoints=100;
 gridtype=1;                     %1 for uniform and 2 for non-uniform
@@ -80,4 +80,8 @@ ylabel('Y Units');
 axis equal;                                                                 % Set axes equal
 zoom reset;         
 
+x_ae=xl(end:-1:1);
+y_ae=yl(end:-1:1);
 
+x_f=[xu ; x_ae];
+y_f=[yu ; y_ae];
